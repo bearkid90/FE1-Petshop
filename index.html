@@ -5,33 +5,39 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>FE1 Pet Shop</title>
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-
+        
         <header>
             <div id="top-bar">
                 <p>Grandes ofertas en comederos</p>
                 <div id="option-menu">
-                	<div class="dropdown">
-                		<button class="dropbtn">Español</button>
-                		<div class="dropdown-content">
-                			<a href="#">Link1</a>
-                			<a href="#">Link2</a>
-                			<a href="#">Link3</a>
-                		</div>
-                	</div>
-                	<div class="dropdown">
-                		<button class="dropbtn">ARG$</button>
-                		<div class="dropdown-content">
-                			<a href="#">Link1</a>
-                			<a href="#">Link2</a>
-                			<a href="#">Link3</a>
-                		</div>
-                	</div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Español</button>
+                        <div class="dropdown-content">
+                            <a href="#">Link1</a>
+                            <a href="#">Link2</a>
+                            <a href="#">Link3</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">ARG$</button>
+                        <div class="dropdown-content">
+                            <a href="#">Link1</a>
+                            <a href="#">Link2</a>
+                            <a href="#">Link3</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="main-menu-bar">
-                <img src="img/Logo.png" alt="Pet shop logo">
+                <div id="logo-1" class="logo">
+                    <img src="img/cat.svg" alt="A cat that is part of the logo">
+                    <p>Front</p>
+                    <p>Cat&Dog</p>
+                    <img src="img/dog.svg" alt="A dog that is part of the logo">
+                </div>
                 <ul id="main-menu">
                     <li>Categorías</li>
                     <li>Pets</li>
@@ -43,51 +49,73 @@
 
         <main>
             <div id="banner">
-                <img src="img/bowl-and-pet-daities-on-green-background 1.png" alt="Dog food">
-                <p>Es un placer tenerte aquí</p>
-                <p>Comederos en descuento</p>
-                <p>COMEDEROS</p>
+                <img id="banner-img" src="img/bowl-and-pet-daities-on-green-background 1.png" alt="Dog food">
+                <div>Es un placer tenerte aquí</div>
+                <div>Comederos en descuento</div>
+                <div>COMEDEROS</div>
             </div>
             <div id="products">
-                <img src="img/pawprint 1.png" alt="Dog's paw">
+                <div><img src="img/pawprint 1.png" alt="Dog's paw"></div>
                 <h1>Productos Destacados</h1>
-                <p>Comederos</p>
-                <p>Accesorios</p>
-                <p>Comida</p>
-                <div>
+                <div id="categorias">
+                    <p>Comederos</p>
+                    <p>Accesorios</p>
+                    <p>Comida</p>
+                </div>
+            </div>
+
+            <div id="products-img">
+                <div class="product">
                     <img src="img/churrasquito.png">
                     <p>Juguete Churrasquito</p>
                     <p>$150</p>
                 </div>
-                <div>
+                <div class="product">
                     <img src="img/comedero.png">
                     <p>Comedero para perro</p>
                     <p>$250</p>
                 </div>
-                <div>
+                <div class="product">
                     <img src="img/Huesito.png">
                     <p>Juguete Huesito</p>
                     <p>$650</p>
                 </div>
             </div>
+
+            <form id="contactanos">
+                <h2>Contáctanos</h2>
+                <p>Nombre y Apellido</p>
+                <p>Ingresá tu correo electrónico</p>
+                <p>Teléfono</p>
+    
+                <div id="form1-buttons">
+                    <p>Resetear</p>
+                    <p>Enviar</p>
+                </div>
+            </form>
+
+            <form id="suscribete">
+                <div>
+                    <img src="img/enviar-correo 1.png">
+                    <p>Suscribete para más novedades</p>
+                </div>
+                <div>
+                    <p>Ingresá tu correo electrónico</p>
+                    <p>Suscribirme</p>
+                </div>
+            </form>
+
         </main>
 
         <aside>
-            <h2>Contáctanos</h2>
-            <p>Nombre y Apellido</p>
-            <p>Ingresá tu correo electrónico</p>
-            <p>Teléfono</p>
 
-            <p>Resetear</p>
-            <p>Enviar</p>
+            <div id="logo-2" class="logo">
+                <img src="img/cat.svg" alt="A cat that is part of the logo">
+                <p>Front</p>
+                <p>Cat&Dog</p>
+                <img src="img/dog.svg" alt="A dog that is part of the logo">
+            </div>
 
-            <img src="img/enviar-correo 1.png">
-            <p>Suscribete para más novedades</p>
-
-            <p>Ingresá tu correo electrónico</p>
-            <p>Suscribirme</p>
-
-            <img src="img/Logo.png">
             <h3>Localidad</h3>
             <p>Calle - provincia</p>
 

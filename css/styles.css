@@ -1,0 +1,194 @@
+:root * {
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+/***********************/
+/******* HEADER *******/
+/*********************/
+
+header {
+    background-color: #F0A83E;
+    color: #FFFFFF;
+}
+
+#top-bar {
+    background: #222222;
+    color: #FFFFFF;
+    display: flex;
+}
+
+#option-menu {
+    display: flex;
+}
+
+#main-menu-bar {
+    display: flex;
+}
+
+#main-menu {
+    display: flex;
+    list-style-type: none;
+}
+
+/***********************/
+/******** LOGO ********/
+/*********************/
+
+.logo {
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 23px;
+}
+
+.logo * {
+    display: inline;
+}
+/*FRONT*/
+#logo-1 p:nth-child(2) {
+    color: #3C2313;
+}
+/*CAT&DOG*/
+#logo-1 p:nth-child(3) {
+    color: #FFFFFF;
+}
+/*FRONT*/
+#logo-2 p:nth-child(2) {
+    color: #FFFFFF;
+}
+/*CAT&DOG*/
+#logo-2 p:nth-child(3) {
+    color: #F0A83E;
+}
+
+/***********************/
+/******* BANNER *******/
+/*********************/
+
+#banner {
+    position: relative;
+}
+
+#banner-img {
+    height: auto;
+    width: 100%;
+}
+
+#banner div {
+    position: absolute;
+}
+/* Es un placer tenerte aqui */
+#banner div:nth-of-type(1) {
+    top: 8px;
+    left: 8px;
+}
+/* Comederos en descuento */
+#banner div:nth-of-type(2) {
+    top: 30px;
+    left: 8px;
+}
+/* COMEDEROS */
+#banner div:nth-of-type(3) {
+    top: 60px;
+    left: 8px;
+}
+
+/***********************/
+/******** MAIN ********/
+/*********************/
+
+main > * {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#categorias {
+    display: flex;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#form1-buttons {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+/***********************/
+/****** PRODUCTS ******/
+/*********************/
+
+#products-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #FBFAF6;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+/**********************/
+/******* FORMS *******/
+/********************/
+
+/*** CONTACTANOS ***/
+
+/*** SUSCRIBITE ***/
+
+#suscribete {
+    background-color: #F0A83E;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+#suscribete div:nth-child(1) {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+
+#suscribete div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/**********************/
+/******* ASIDE *******/
+/********************/
+
+aside {
+    background-color: #3C2313;
+    color: #FFFFFF;
+}
+
+/***********************/
+/******* FOOTER *******/
+/*********************/
+
+footer {
+    background-color: #222222;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 15px;
+    text-align: center;
+}

@@ -1,7 +1,8 @@
-:root * {
+* {
     margin: 0;
     padding: 0;
-    font-family:'Times New Roman', Times, serif;
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
 }
 
 /***********************/
@@ -25,11 +26,39 @@ header {
 
 #main-menu-bar {
     display: flex;
+    height: 62px;
 }
 
 #main-menu {
     display: flex;
+    justify-content: space-around;
+    width: 400px;
     list-style-type: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 15px;
+}
+
+#main-menu img {
+    margin-right: 2px;
+}
+
+.args {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.espaniol {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
 }
 
 /***********************/
@@ -64,46 +93,80 @@ header {
     color: #F0A83E;
 }
 
-/***********************/
-/******* BANNER *******/
-/*********************/
-
-#banner {
-    position: relative;
-}
-
-#banner-img {
-    height: auto;
-    width: 100%;
-}
-
-#banner div {
-    position: absolute;
-}
-/* Es un placer tenerte aqui */
-#banner div:nth-of-type(1) {
-    top: 8px;
-    left: 8px;
-}
-/* Comederos en descuento */
-#banner div:nth-of-type(2) {
-    top: 30px;
-    left: 8px;
-}
-/* COMEDEROS */
-#banner div:nth-of-type(3) {
-    top: 60px;
-    left: 8px;
-}
 
 /***********************/
 /******** MAIN ********/
 /*********************/
 
-main > * {
-    display: flex;
-    flex-direction: column;
+/************************/
+/******** MAIN *********/
+/******* BANNER *******/
+/*********************/
+
+.banner {
+    position: relative;
     text-align: center;
+    background-color: #A0DCB8;
+}
+
+.banner__background {
+    width: clamp(1025px, 100%, 100%);
+    height: clamp(410px, auto, auto);
+    vertical-align: bottom;
+}
+
+.info {
+    position: absolute;
+    right: 1.5%;
+    top: 38.2%;
+}
+
+.info > * {
+    margin-bottom: 12px;
+}
+
+.info__title {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    color: #3C2313;
+    font-size: 30px;
+    padding: 8px;
+}
+
+.info__subtitle {
+    color: #3C2313;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.info__button {
+    background-color: #F0A83E;
+    border: 0;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 15px;
+}
+
+@media (min-width: 1025px) {
+    .info {
+        right: unset;
+        left: 63.4%;
+    }
+}
+
+@media (max-width: 600px) {
+    .info {
+        top: 36%;
+        left: 0;
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        width: 361px;
+    }
+    .info__subtitle {
+        color: #FFFFFF;
+    }
 }
 
 #categorias {
@@ -146,6 +209,13 @@ main > * {
 
 /*** CONTACTANOS ***/
 
+#contactanos {
+}
+
+#contactanos h2 {
+    color: #3C2313;
+}
+
 /*** SUSCRIBITE ***/
 
 #suscribete {
@@ -186,9 +256,10 @@ footer {
     background-color: #222222;
     color: #FFFFFF;
     font-family: Roboto;
-    font-size: 13px;
+    font-size: 16px;
     font-style: normal;
     font-weight: bold;
     line-height: 15px;
     text-align: center;
+    height: 21px;
 }

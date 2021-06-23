@@ -1,33 +1,29 @@
 <!DOCTYPE html>
+
 <html lang="es">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>FE1 Pet Shop</title>
         <link rel="stylesheet" href="css/styles.css">
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     </head>
+
     <body>
-        
         <header>
             <div id="top-bar">
                 <p>Grandes ofertas en comederos</p>
                 <div id="option-menu">
                     <div class="dropdown">
-                        <button class="dropbtn">Español</button>
-                        <div class="dropdown-content">
-                            <a href="#">Link1</a>
-                            <a href="#">Link2</a>
-                            <a href="#">Link3</a>
-                        </div>
+                        <p class="espaniol">Español</p>
                     </div>
                     <div class="dropdown">
-                        <button class="dropbtn">ARG$</button>
-                        <div class="dropdown-content">
-                            <a href="#">Link1</a>
-                            <a href="#">Link2</a>
-                            <a href="#">Link3</a>
-                        </div>
+                        <p class="args">ARG$</p>
                     </div>
                 </div>
             </div>
@@ -39,21 +35,24 @@
                     <img src="img/dog.svg" alt="A dog that is part of the logo">
                 </div>
                 <ul id="main-menu">
-                    <li>Categorías</li>
-                    <li>Pets</li>
-                    <li>Nosotros</li>
-                    <li>Contactanos</li>
+                    <li><img src="img/pawprint 1 (1).png" alt="" height="20" width="20">Categorías</li>
+                    <li><img src="img/pawprint 1 (1).png" alt="" height="20" width="20">Pets</li>
+                    <li><img src="img/pawprint 1 (1).png" alt="" height="20" width="20">Nosotros</li>
+                    <li><img src="img/pawprint 1 (1).png" alt="" height="20" width="20">Contactanos</li>
                 </ul>
             </div>
         </header>
 
         <main>
-            <div id="banner">
-                <img id="banner-img" src="img/bowl-and-pet-daities-on-green-background 1.png" alt="Dog food">
-                <div>Es un placer tenerte aquí</div>
-                <div>Comederos en descuento</div>
-                <div>COMEDEROS</div>
+            <div class="banner">
+                <img class="banner__background" src="img/bowl-and-pet-daities-on-green-background 1.png" alt="Dog treats as banner background">
+                <div class="info">
+                    <p class="info__title">¡Es un placer tenerte aquí!</p>
+                    <p class="info__subtitle">¡Comederos en descuento!</p>
+                    <button class="info__button">COMEDEROS</button>
+                </div>
             </div>
+
             <div id="products">
                 <div><img src="img/pawprint 1.png" alt="Dog's paw"></div>
                 <h1>Productos Destacados</h1>
@@ -87,7 +86,7 @@
                 <p>Nombre y Apellido</p>
                 <p>Ingresá tu correo electrónico</p>
                 <p>Teléfono</p>
-    
+            
                 <div id="form1-buttons">
                     <p>Resetear</p>
                     <p>Enviar</p>
@@ -104,7 +103,6 @@
                     <p>Suscribirme</p>
                 </div>
             </form>
-
         </main>
 
         <aside>

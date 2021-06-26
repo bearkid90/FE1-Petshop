@@ -66,31 +66,33 @@
                 <div id="products-img">
                     <div class="product">
                         <img src="img/churrasquito.png">
-                        <p>Juguete Churrasquito</p>
-                        <p>$150</p>
+                        <p class="brown">Juguete Churrasquito</p>
+                        <p class="orange">$150</p>
                     </div>
                     <div class="product">
                         <img src="img/comedero.png">
-                        <p>Comedero para perro</p>
-                        <p>$250</p>
+                        <p class="brown">Comedero para perro</p>
+                        <p class="orange">$250</p>
                     </div>
                     <div class="product">
                         <img src="img/Huesito.png">
-                        <p>Juguete Huesito</p>
-                        <p>$650</p>
+                        <p class="brown">Juguete Huesito</p>
+                        <p class="orange">$650</p>
                     </div>
                 </div>
             </div>
 
-            <form id="contactanos">
+            <form id="contactanos" action="results.html" method="GET">
                 <h2>Contáctanos</h2>
-                <p>Nombre y Apellido</p>
-                <p>Ingresá tu correo electrónico</p>
-                <p>Teléfono</p>
-            
+                <label for="nombre"></label>
+                <input type="text" placeholder="Nombre y Apellido" required>
+                <label for="email"></label>
+                <input type="email" placeholder="Ingresá tu correo electrónico" required>
+                <label for="telefono"></label>
+                <input type="number" placeholder="Teléfono" required>
                 <div id="form1-buttons">
-                    <p>Resetear</p>
-                    <p>Enviar</p>
+                    <button id="resetear">Resetear</button>
+                    <button id="enviar">Enviar</button>
                 </div>
             </form>
 

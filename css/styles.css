@@ -18,21 +18,48 @@ header {
     background: #222222;
     color: #FFFFFF;
     display: flex;
+    justify-content: space-between;
+    padding-left: 74px;
+    padding-right: 53px;
+    align-items: center;
+    height: 40px;
+}
+
+#top-bar > p {
+    font-size: 12px;
+}
+
+.dropdown {
+    display: flex;
+}
+
+.dropdown:first-child {
+    padding-right: 12px;
+}
+
+.dropdown > p {
+    font-size: 12px;
 }
 
 #option-menu {
     display: flex;
 }
 
+#main-menu-bar-wrapper {
+    padding-left: 72px;
+    padding-right: 24px;
+}
+
 #main-menu-bar {
     display: flex;
-    height: 62px;
+    justify-content: space-between;
+    align-items: center;
+    height: 128px;
 }
 
 #main-menu {
     display: flex;
     justify-content: space-around;
-    width: 400px;
     list-style-type: none;
     font-family: Roboto;
     font-style: normal;
@@ -42,7 +69,7 @@ header {
 }
 
 #main-menu img {
-    margin-right: 2px;
+    margin-right: 4px;
 }
 
 .args {
@@ -61,15 +88,75 @@ header {
     line-height: 12px;
 }
 
+#menu-logo {
+    display: none;
+}
+
+@media (max-width: 1050px) {
+    #top-bar {
+        display: none;
+    }
+    #main-menu-bar-wrapper {
+        padding-left: 32px;
+        padding-right: 4px;
+    }
+    #logo-1 {
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 919px) and (min-width:885px) {
+    #first-dog {
+        display: none;
+    }
+}
+
+@media (max-width: 808px) {
+    nav > ul > li {
+        display: none;
+    }
+
+    #menu-logo {
+        display:inline-block;
+        width: 30px;
+    }
+
+    #main-menu-bar-wrapper {
+        padding-left: 32px;
+        padding-right: 24px;
+    }
+
+    #logo-1 {
+        margin-right: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #main-menu-bar-wrapper {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    #logo-1 {
+        margin-right: 12px;
+    }
+
+}
+
+
+
 /***********************/
 /******** LOGO ********/
 /*********************/
 
 .logo {
-    font-family: Roboto;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: bold;
+}
+
+.logo p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 900;
     line-height: 23px;
 }
 
@@ -93,6 +180,21 @@ header {
     color: #F0A83E;
 }
 
+li {
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+}
+
+li > img {
+    display: inline-block;
+    align-self:flex-end;
+}
+
+li > p {
+    font-size: 20px;
+}
+
 
 /***********************/
 /******** MAIN ********/
@@ -107,6 +209,7 @@ header {
     position: relative;
     text-align: center;
     background-color: #A0DCB8;
+    width: 100%;
 }
 
 .banner__background {
@@ -255,7 +358,7 @@ header {
     margin-bottom: 24px;
 }
 
-input {
+#contactanos input {
     background-color: #3C2313;
     border-radius: 20px;
     color:#FFFFFF;
@@ -266,13 +369,13 @@ input {
     text-indent: 16px;
 }
 
-::placeholder {
+#contactanos ::placeholder {
     color: #FFFFFF;
     opacity: 0.6;
     font-size: 12px;
 }
 
-button {
+#contactanos button {
     border-radius: 25px;
     color:#FFFFFF;
     height: 40px;
@@ -295,34 +398,252 @@ button {
 
 /*** SUSCRIBITE ***/
 
-#suscribete {
+.suscribete {
     background-color: #F0A83E;
     color: #FFFFFF;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content:space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;;
+
 }
 
-#suscribete div:nth-child(1) {
-    align-items: center;
+.suscribete-logo {
     display: flex;
-    flex-direction: row;
-    margin-left: 10px;
+    align-items: center;
 }
 
-#suscribete div:nth-child(2) {
+.suscribete-logo img {
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 12px;
+}
+
+.suscribete-logo p {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+.suscribete-form {
     display: flex;
-    flex-direction: row;
     align-items: center;
+
+}
+
+.suscribete input {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border-style: solid;
+    border-color:#FFFFFF;
+    color:#000;
+    font-size: 12px;
+    height: 48px;
+    width: 270px;
+    text-indent: 16px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 5px;
+}
+
+.suscribete ::placeholder {
+    color: #A0A0A0;
+    opacity: 1;
+    font-size: 12px;
+}
+
+.suscribete button {
+    background-color:#3C2313;
+    border-color: #3C2313;
+    border-style: solid;
+    border-radius: 20px;
+    color:#FFFFFF;
+    display: block;
+    height: 44px;
+    font-size: 12px;
+    width: 80px;
+    margin-left: 20px;
+    margin-right: 40px;
 }
 
 /**********************/
 /******* ASIDE *******/
 /********************/
+.aside-wrapper {
+    background-color: #3C2313;
+}
 
 aside {
     background-color: #3C2313;
     color: #FFFFFF;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 48px;
+    margin-left: 72px;
+    margin-right: 72px;
+}
+
+aside .logo {
+    margin-bottom: 48px;
+}
+
+.button-wrapper {
+    display: flex;
+    padding-bottom: 24px;
+}
+
+.footer-buttons h3 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.footer-buttons p {
+    color: #8A8787;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+.footer-button-1 {
+    background-color:#8A8787;
+    background-image: url('../img/location\ 1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 5px solid #786960;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 12px;
+}
+
+.footer-button-2 {
+    background-color:#8A8787;
+    background-image: url('../img/phone-call\ 1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 5px solid #786960;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 12px;
+}
+
+.footer-button-3 {
+    background-color:#8A8787;
+    background-image: url('../img/correo-electronico\ 1.png');
+    background-repeat: no-repeat;
+    background-position-x: 65%;
+    background-position-y: 50%;
+    border: 5px solid #786960;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 12px;
+}
+
+@media (max-width: 900px) {
+    .suscribete {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .suscribete button {
+        margin-right: 0;
+        margin-left: 8px;
+    }
+    .suscribete input {
+        margin-left: 0;
+    }
+    .suscribete img {
+        margin-left: 0;
+    }
+    .suscribete p {
+        margin-right: 0;
+    }
+
+    aside {
+        background-color: #3C2313;
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 12px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+        
+    aside .logo {
+        margin-bottom: 32px;
+        margin-top: 24px;
+    }
+
+    .button-wrapper {
+        display: flex;
+        padding-bottom: 24px;
+    }
+
+    .footer-buttons h3 {
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .footer-buttons p {
+        color: #8A8787;
+        font-size: 12px;
+        font-weight: 700;
+        margin-top: 4px;
+    }
+
+    .footer-button-1 {
+        background-color:#8A8787;
+        background-image: url('../img/location\ 1.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 5px solid #786960;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        margin-right: 12px;
+    }
+
+    .footer-button-2 {
+        background-color:#8A8787;
+        background-image: url('../img/phone-call\ 1.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 5px solid #786960;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        margin-right: 12px;
+    }
+
+    .footer-button-3 {
+        background-color:#8A8787;
+        background-image: url('../img/correo-electronico\ 1.png');
+        background-repeat: no-repeat;
+        background-position-x: 65%;
+        background-position-y: 50%;
+        border: 5px solid #786960;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        margin-right: 12px;
+    }
+        
+}
+
+@media (max-width:600px) {
+    .suscribete input {
+        height: 40px;
+    }
+    .suscribete button {
+        height: 36px;
+    }
 }
 
 /***********************/
@@ -330,13 +651,13 @@ aside {
 /*********************/
 
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #222222;
     color: #FFFFFF;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 15px;
-    text-align: center;
-    height: 21px;
+    font-size: 12px;
+    font-weight: 700;
+    height: 24px;
+    width: 100%;
 }

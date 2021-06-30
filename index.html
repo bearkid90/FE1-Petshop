@@ -11,7 +11,7 @@
         <!-- FONTS -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -21,25 +21,32 @@
                 <div id="option-menu">
                     <div class="dropdown">
                         <p class="espaniol">Español</p>
+                        <img src="img/down.png" alt="">
                     </div>
                     <div class="dropdown">
                         <p class="args">ARG$</p>
+                        <img src="img/down.png" alt="">
                     </div>
                 </div>
             </div>
-            <div id="main-menu-bar">
-                <div id="logo-1" class="logo">
-                    <img src="img/cat.svg" alt="A cat that is part of the logo">
-                    <p>Front</p>
-                    <p>Cat&Dog</p>
-                    <img src="img/dog.svg" alt="A dog that is part of the logo">
+            <div id="main-menu-bar-wrapper">
+                <div id="main-menu-bar">
+                    <div id="logo-1" class="logo">
+                        <img id="first-cat" src="img/cat.svg" alt="A cat that is part of the logo" width="28">
+                        <p>Front</p>
+                        <p>Cat&Dog</p>
+                        <img id="first-dog" src="img/dog.svg" alt="A dog that is part of the logo" width="30">
+                    </div>
+                    <nav>
+                        <ul id="main-menu">
+                            <img id="menu-logo" src="img/menu-icon 1.png" alt="">
+                            <li><img src="img/pawprint 1 (1).png" alt="" height="20" width="20"><p>Categorías</p></li>
+                            <li><img src="img/pawprint 1 (1).png" alt="" height="20" width="20"><p>Pets</p></li>
+                            <li><img src="img/pawprint 1 (1).png" alt="" height="20" width="20"><p>Nosotros</p></li>
+                            <li><img src="img/pawprint 1 (1).png" alt="" height="20" width="20"><p>Contactanos</p></li>
+                        </ul>
+                    </nav>
                 </div>
-                <ul id="main-menu">
-                    <li><img src="img/pawprint 1 (1).png" alt="" height="20" width="20">Categorías</li>
-                    <li><img src="img/pawprint 1 (1).png" alt="" height="20" width="20">Pets</li>
-                    <li><img src="img/pawprint 1 (1).png" alt="" height="20" width="20">Nosotros</li>
-                    <li><img src="img/pawprint 1 (1).png" alt="" height="20" width="20">Contactanos</li>
-                </ul>
             </div>
         </header>
 
@@ -96,36 +103,53 @@
                 </div>
             </form>
 
-            <form id="suscribete">
-                <div>
+            <form class="suscribete">
+                <div class="suscribete-logo">
                     <img src="img/enviar-correo 1.png">
-                    <p>Suscribete para más novedades</p>
+                    <p>Suscríbete para más novedades</p>
                 </div>
-                <div>
-                    <p>Ingresá tu correo electrónico</p>
-                    <p>Suscribirme</p>
+                <div class="suscribete-form">
+                    <form action="results2.html" method="GET">
+                        <label for="email"></label>
+                        <input type="email" placeholder="Ingresá tu correo electrónico" required>
+                        <button id="suscribirme">Suscribirme</button>
+                    </form>
                 </div>
-            </form>
         </main>
+        <div class="aside-wrapper">
+            <aside>
+                <div id="logo-2" class="logo">
+                    <img src="img/cat.svg" alt="A cat that is part of the logo" width="28">
+                    <p>Front</p>
+                    <p>Cat&Dog</p>
+                    <img src="img/dog.svg" alt="A dog that is part of the logo" width="30">
+                </div>
 
-        <aside>
-
-            <div id="logo-2" class="logo">
-                <img src="img/cat.svg" alt="A cat that is part of the logo">
-                <p>Front</p>
-                <p>Cat&Dog</p>
-                <img src="img/dog.svg" alt="A dog that is part of the logo">
-            </div>
-
-            <h3>Localidad</h3>
-            <p>Calle - provincia</p>
-
-            <h3>Teléfono</h3>
-            <p>Número de teléfono</p>
-
-            <h3>Correo Electrónico</h3>
-            <p>Dirección de correo</p>
-        </aside>
+                <div class="footer-buttons">
+                    <div class="button-wrapper">
+                        <div class="footer-button-1"></div>
+                        <div class="footer-text">
+                            <h3>Localidad</h3>
+                            <p>Calle - provincia</p>
+                        </div>
+                    </div>
+                    <div class="button-wrapper"> 
+                        <div class="footer-button-2"></div>
+                        <div class="footer-text">
+                            <h3>Número de teléfono</h3>
+                            <p>15-111-111-111</p>
+                        </div>
+                    </div>
+                    <div class="button-wrapper">
+                        <div class="footer-button-3"></div>
+                        <div class="footer-text">
+                            <h3>Correo Electrónico</h3>
+                            <p>Dirección de correo</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
 
         <footer>
             <p>Todos los derechos reservados Front End</p>
